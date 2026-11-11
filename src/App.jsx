@@ -14,8 +14,8 @@ function App() {
   return (
     <Routes>
       <Route element={<Layout cityId={cityId} onCityChange={setCityId} />}>
-        <Route index element={<TodayPage city={city} units={units} />} />
-        <Route path="week" element={<WeekPage city={city} units={units} />} />
+        <Route index element={<TodayPage city={city}/>} />
+        <Route path="week" element={<WeekPage city={city} />} />
       </Route>
     </Routes>
   );

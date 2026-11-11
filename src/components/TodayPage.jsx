@@ -7,8 +7,8 @@ function TodayPage({ city, units }) {
       <h2 className="page-title">
         {city.name}, {city.region}
       </h2>
-      <CurrentConditions current={city.current} units={units} />
-      <HourlyStrip hours={city.hourly} units={units} />
+      <CurrentConditions current={city.current}/>
+      <HourlyStrip hours={city.hourly}/>
     </section>
   );
 }

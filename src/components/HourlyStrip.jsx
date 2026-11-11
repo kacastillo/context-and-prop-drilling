@@ -1,10 +1,10 @@
 import HourCard from "./HourCard.jsx";
 
-function HourlyStrip({ hours, units }) {
+function HourlyStrip({ hours}) {
   return (
     <ol className="hours">
       {hours.map((hour) => (
-        <HourCard key={hour.hour} hour={hour} units={units} />
+        <HourCard key={hour.hour} hour={hour} />
       ))}
     </ol>
   );
