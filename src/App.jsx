@@ -19,10 +19,15 @@ return (
     <Routes>
       <Route element={<Layout cityId={cityId} onCityChange={setCityId} />}>
         <Route index element={<TodayPage city={city} />} />
-       <Route path="week" element={ <UnitsContext value="F">
-        <WeekPage city={city} />
-    </UnitsContext>}
+      <Route
+  path="week"
+  element={
+    <UnitsContext value="F">
+      <WeekPage city={city} />
+    </UnitsContext>
+  }
 />
+
       </Route>
     </Routes>
   </UnitsContext>
@@ -30,3 +35,5 @@ return (
 }
 
 export default App;
+
+
