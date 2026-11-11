@@ -7,6 +7,7 @@ import TodayPage from "./components/TodayPage.jsx";
 import WeekPage from "./components/WeekPage.jsx";
 
 import { UnitsContext } from "./context/UnitsContext.jsx";
+import { UnitsProvider } from "./context/UnitsContext.jsx";
 
 function App() {
   const units = "F";
