@@ -12,7 +12,6 @@ function UnitsToggle() {
       >
         °F
       </button>
-
       <button
         type="button"
         className={units === "C" ? "units-on" : ""}

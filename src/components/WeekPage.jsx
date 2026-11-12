@@ -1,6 +1,9 @@
+import { useCity } from "../context/CityContext.jsx";
 import DayCard from "./DayCard.jsx";
 
-function WeekPage({ city}) {
+function WeekPage() {
+  const { city } = useCity();
+
   return (
     <section className="page">
       <h2 className="page-title">This week in {city.name}</h2>
