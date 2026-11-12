@@ -1,4 +1,3 @@
-
 import { createContext, useContext, useState } from "react";
 
 export const UnitsContext = createContext(null);
@@ -6,11 +5,7 @@ export const UnitsContext = createContext(null);
 export function UnitsProvider({ children }) {
   const [units, setUnits] = useState("F");
 
-  return (
-    <UnitsContext value={{ units, setUnits }}>
-      {children}
-    </UnitsContext>
-  );
+  return <UnitsContext value={{ units, setUnits }}>{children}</UnitsContext>;
 }
 
 export function useUnits() {
