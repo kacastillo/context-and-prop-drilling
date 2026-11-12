@@ -1,7 +1,7 @@
 import { conditionIcon } from "../conditions.js";
 import Temperature from "./Temperature.jsx";
 
-function DayCard({ day}) {
+function DayCard({ day }) {
   return (
     <li className="day">
       <span className="day-name">{day.day}</span>

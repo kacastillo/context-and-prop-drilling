@@ -1,7 +1,7 @@
 import { conditionIcon } from "../conditions.js";
 import Temperature from "./Temperature.jsx";
 
-function CurrentConditions({ current}) {
+function CurrentConditions({ current }) {
   return (
     <div className="current">
       <span className="current-icon">{conditionIcon(current.condition)}</span>
