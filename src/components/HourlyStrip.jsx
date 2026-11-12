@@ -1,6 +1,6 @@
 import HourCard from "./HourCard.jsx";
 
-function HourlyStrip({ hours}) {
+function HourlyStrip({ hours }) {
   return (
     <ol className="hours">
       {hours.map((hour) => (

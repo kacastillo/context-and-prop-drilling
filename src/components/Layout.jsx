@@ -2,10 +2,10 @@ import { Outlet } from "react-router";
 
 import Header from "./Header.jsx";
 
-function Layout({ cityId, onCityChange }) {
+function Layout() {
   return (
     <div className="app">
-      <Header cityId={cityId} onCityChange={onCityChange} />
+      <Header />
       <main>
         <Outlet />
       </main>
