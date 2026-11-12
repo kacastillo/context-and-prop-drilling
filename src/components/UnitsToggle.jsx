@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import { UnitsContext } from "../context/UnitsContext.jsx";
+import { useUnits } from "../context/UnitsContext.jsx";
 
 function UnitsToggle() {
-  const { units, setUnits } = useContext(UnitsContext);
+  const { units, setUnits } = useUnits();
 
   return (
     <div className="units-toggle">
